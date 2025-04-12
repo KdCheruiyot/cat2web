@@ -1,0 +1,186 @@
+/* Page Background */
+body {
+    background-color: #21c6cc; /* Soft light background color */
+    font-family: Arial, sans-serif;
+    color: #333; /* Darker text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50; /* Dark blue for header */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Checkout Container */
+.checkout-container {
+    background-color: #ffffff;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart Items Section */
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Shipping Form */
+form {
+    margin-top: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #3498db; /* Blue color for button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #2980b9; /* Darker blue when hovered */
+}
+
+/* Go Back Button */
+#pagination {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back-button {
+    background-color: #e74c3c; /* Soft red background for back button */
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+.back-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+.back-button:active {
+    background-color: #e74c3c; /* Keep red color when clicked */
+    transform: scale(1); /* Reset scale when clicked */
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50; /* Dark blue for footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 0;
+}
+/* Next Button */
+#next-button {
+    background-color: #1ac9f5; /* Bright blue for next button */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#next-button:hover {
+    background-color: #0fa3db; /* Darker blue when hovered */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+#next-button:active {
+    background-color: #1ac9f5; /* Keep blue color when clicked */
+    transform: scale(1); /* Reset scale when clicked */
+}
+/* Cart Icon */
+.cart-icon {
+    background-color: #3498db; /* Blue color for cart icon */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5em; /* Larger font size */
+    transition: background-color 0.3s, transform 0.3s;
+}
+.cart-icon:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+.cart-icon:active {
+    background-color: #3498db; /* Keep blue color when clicked */
+    transform: scale(1); /* Reset scale when clicked */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .checkout-container {
+        width: 90%; /* Make the container responsive */
+        padding: 15px; /* Adjust padding */
+    }
+    header h1 {
+        font-size: 1.8em; /* Adjust header font size */
+    }
+    .cart-icon {
+        font-size: 1.2em; /* Adjust cart icon size */
+    }
+}
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Smaller font size for mobile */
+    }
+    .checkout-container {
+        width: 95%; /* Make the container even more responsive */
+        padding: 10px; /* Adjust padding */
+    }
+    .cart-icon {
+        font-size: 1em; /* Smaller cart icon size */
+    }
+}
+/* Cart Container */
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 100%; /* Full width */
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}

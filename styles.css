@@ -1,0 +1,421 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(30, 221, 221);
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    align-items: center;
+    
+
+}
+
+header {
+    background-color:whitesmoke;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color:black;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1, h2, h3 {
+    
+    font-family: 'Poppins', sans-serif;
+    color: #3054f3;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+.product1{
+    text-align: center;
+}
+.product-image {
+    width: 100%;
+    height: 200px;          /* Fixed height for uniformity */
+    object-fit: cover;      /* Ensures the image covers the box without distortion */
+    border-radius: 5px;     /* Optional: Rounded corners for the images */
+    margin-bottom: 15px;    /* Space between image and text */
+}
+    
+
+/* Product Grid Styles */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.product-card {
+    background-color: #3054f3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 0.9em;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.product-card .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #5cb85c;
+}
+
+.product-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #0056b3;
+}
+
+/* Cart Section Styles */
+.cart-container {
+    padding: 20px;
+    background-color: #0fe44f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.cart-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.cart-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-container ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.cart-container .total {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
+.cart-container button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.cart-container button:hover {
+    background-color: #1275d1;
+}
+#pagination button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#pagination button:hover {
+    background-color: #555;
+}
+/* Pagination */
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#pagination button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#pagination button:hover {
+    background-color: #555;
+}
+/* Cart Icon */
+.cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.cart-icon:hover {
+    background-color: #0056b3;
+}
+/* Cart Icon Badge */
+.cart-icon .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 0.8em;
+}
+/* Cart Icon Animation */
+.cart-icon.animate {
+    animation: bounce 0.5s;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+#cart {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#cart h2 {
+    text-align: center;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#cart-items li {
+    padding: 6px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+#checkout-button {
+    display: block;
+    width: 100%;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#checkout-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#checkout-button:hover:enabled {
+    background-color: #27ae60;
+}
+/* Style for Add to Cart Button */
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 5px;
+}
+
+/* Add to Cart Button Style */
+button:hover {
+    background-color: #f39c12; /* Golden Yellow for hover */
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Add to Cart Specific Style */
+button:active {
+    background-color: #e67e22; /* Darker shade on click */
+    transform: scale(1); /* Reset scale when clicked */
+}
+
+/* Style when Add to Cart Button is disabled */
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Cart Icon Styles */
+.cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.cart-icon:hover {
+    background-color: #0056b3;
+}
+/* Go Back Button Style */
+.back-button {
+    background-color: #333;      
+    color: #ffffff;                 /* White text */
+    padding: 12px 24px;             /* Nice padding */
+    font-size: 16px;                /* Readable font size */
+    border: none;                   /* No border */
+    border-radius: 8px;             /* Rounded corners */
+    cursor: pointer;                /* Pointer on hover */
+    margin-top: 20px;               /* Space from other elements */
+    transition: background-color 0.3s ease;  /* Smooth hover effect */
+}
+
+.back-button:hover {
+    background-color: #c0392b;      /* Darker red on hover */
+}
+
+
+.back-button:hover {
+    background-color: greenyellow; /* Darker red when hovered */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: powderblue;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Next Button */
+#next-button {
+    background-color: #1ac9f5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#next-button:hover {
+    background-color: #10eeee;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 80%;
+    }
+
+    .cart-container {
+        margin: 10px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+
+    .cart-container {
+        width: 90%;
+    }
+
+    #next-button {
+        width: 80%;
+    }
+}
